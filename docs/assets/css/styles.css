@@ -4800,6 +4800,143 @@ body {
 
 /* End Core.SCSS */
 /* Begin DarkTheme.SCSS */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #212d39 !important;
+    color: #f8f9fa !important; }
+    body #toc_container .toc_container__wrapper,
+    body #content .content__wrapper,
+    body body .content__wrapper,
+    body .page__list-wrapper {
+      background-color: #212d39 !important;
+      border-color: #fff !important; }
+    body #toc_container,
+    body #page-list,
+    body #book_header {
+      background-color: #2a3a49 !important;
+      border-color: #fff !important; }
+    body #toc_container a:hover,
+    body #page-list a:hover {
+      background: #E9FD59 !important;
+      color: #212d39 !important; }
+    body #toc_container .intro {
+      background-color: #2a3a49; }
+    body #hjelpknapp a, body p, body #content blockquote, #content body blockquote, body blockquote, body a, body h1, body h2, body h3, body h4, body h5, body h6, body #content table thead tr th, #content table thead tr body th, body table thead tr th, body #content table tbody tr th, #content table tbody tr body th, body table tbody tr th, body #content table tfoot tr th, #content table tfoot tr body th, body table tfoot tr th {
+      color: #f8f9fa !important; }
+    body #toc_container .toc_container__wrapper,
+    body #toc_container .intro,
+    body #toc_container,
+    body #content .content__wrapper,
+    body body .content__wrapper,
+    body .page__list-wrapper,
+    body .content__wrapper,
+    body ::-webkit-scrollbar-track {
+      border-color: #fff !important; }
+    body input[type="range"] {
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(0.3, #B1C900), color-stop(0.3, #506d8a)); }
+    body input[type='range']::-webkit-slider-thumb {
+      background-color: #fff !important;
+      border: 0.2vh solid #fff !important; }
+    body input[type='range']::-moz-range-thumb {
+      background-color: #fff !important;
+      border: 0.2vh solid #fff !important;
+      height: 1.2vh;
+      width: 1.2vh;
+      border-radius: 50%; }
+    body .header__right-2 {
+      color: #fff !important; }
+    body #skippability span,
+    body #Avspillingshastighet_main span,
+    body header .header__right-2 span {
+      color: #2a3a49; }
+    body .progress-container {
+      background-color: #fff !important;
+      border: 1px solid #fff !important; }
+    body .progress-bar {
+      background-color: #212d39 !important; }
+    body #play_button {
+      background-color: #fff !important; }
+  #content, body {
+    background-color: #212d39 !important;
+    color: #f8f9fa !important;
+    border-color: #f8f9fa !important;
+    /* Frames
+            * ---------------------------------------------------------- */
+    /* Tables
+            * ---------------------------------------------------------- */ }
+    #content blockquote, body blockquote {
+      background-color: #212d39 !important;
+      color: #f8f9fa !important;
+      border-color: #f8f9fa !important; }
+    #content a:hover, body a:hover,
+    #content .rbPausedFragment,
+    body .rbPausedFragment,
+    #content .rbActiveFragment,
+    body .rbActiveFragment {
+      background: #E9FD59 !important;
+      color: #212d39 !important; }
+    #content span.sentence, body span.sentence {
+      color: #f8f9fa !important; }
+    #content .generisk-ramme, body .generisk-ramme {
+      color: #fff !important;
+      background-color: #2b3a48 !important;
+      border: 1px solid #bcbec0 !important;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px; }
+      #content .generisk-ramme .sentence, body .generisk-ramme .sentence {
+        color: inherit !important; } }
+    @media (prefers-color-scheme: dark) and (min-width: 640px) and (max-width: 767.98px) {
+      #content .generisk-ramme, body .generisk-ramme {
+        padding: 30px;
+        margin-bottom: 36px; } }
+    @media (prefers-color-scheme: dark) and (min-width: 768px) {
+      #content .generisk-ramme, body .generisk-ramme {
+        padding: 35px;
+        margin-bottom: 45px; } }
+
+@media (prefers-color-scheme: dark) {
+    #content .ramme, body .ramme {
+      color: #fff !important;
+      background-color: #2b3a48 !important;
+      border: 1px solid #bcbec0 !important;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px; }
+      #content .ramme .sentence, body .ramme .sentence {
+        color: inherit !important; } }
+    @media (prefers-color-scheme: dark) and (min-width: 640px) and (max-width: 767.98px) {
+      #content .ramme, body .ramme {
+        padding: 30px;
+        margin-bottom: 36px; } }
+    @media (prefers-color-scheme: dark) and (min-width: 768px) {
+      #content .ramme, body .ramme {
+        padding: 35px;
+        margin-bottom: 45px; } }
+
+@media (prefers-color-scheme: dark) {
+      #content .ramme.bg-red, body .ramme.bg-red {
+        color: #fff !important;
+        background-color: #482b3a !important;
+        border: 1px solid #ae7794 !important; }
+      #content .ramme.bg-blue, body .ramme.bg-blue, #content div.language-html, body div.language-html {
+        color: #fff !important;
+        background-color: #486178 !important;
+        border: 1px solid #a8bacb !important; }
+      #content .ramme.bg-yellow, body .ramme.bg-yellow {
+        color: #fff !important;
+        background-color: #48392b !important;
+        border: 1px solid #ae9277 !important; }
+    #content table, body table {
+      color: #f8f9fa !important;
+      background-color: inherit !important; }
+      #content table ul, body table ul {
+        padding-inline-start: 0; }
+        #content table ul li, body table ul li {
+          margin-left: 0; }
+      #content table th, body table th {
+        background-color: #212d39 !important; } }
+
 body.theme__dark #toc_container .toc_container__wrapper,
 body.theme__dark #content .content__wrapper,
 body.theme__dark body .content__wrapper,
@@ -4865,9 +5002,13 @@ body.theme__dark #play_button {
 #content.theme__dark, body.theme__dark {
   border-color: #fff;
   /* Frames
-     * ---------------------------------------------------------- */
+        * ---------------------------------------------------------- */
   /* Tables
-     * ---------------------------------------------------------- */ }
+        * ---------------------------------------------------------- */ }
+  #content.theme__dark blockquote, body.theme__dark blockquote {
+    background-color: #212d39 !important;
+    color: #f8f9fa !important;
+    border-color: #f8f9fa !important; }
   #content.theme__dark a:hover, body.theme__dark a:hover,
   #content.theme__dark .rbPausedFragment,
   body.theme__dark .rbPausedFragment,

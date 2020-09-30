@@ -1,8 +1,157 @@
 /* Begin DarkTheme.SCSS */
 
- body.theme__dark {
-    @extend .bg-night, .text-light;
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $dark !important;
+        color: $light !important;
     
+        #toc_container .toc_container__wrapper,
+        #content .content__wrapper,
+        .page__list-wrapper {
+            background-color: $dark !important;
+            border-color: $white !important;
+        }
+        #toc_container,
+        #page-list,
+        #book_header {
+            background-color: lighten($nlb-black, 5%) !important;
+            border-color: $white !important;
+        }
+        #toc_container,
+        #page-list {
+            a:hover {
+                background: $pure-yellow !important;
+                color: $nlb-black !important;
+            }
+        }
+    
+        #toc_container .intro {
+            background-color: lighten($nlb-black, 5%);
+        }
+    
+        #hjelpknapp a, p, a, h1, h2, h3, h4, h5, h6 
+        {
+            color: $light !important;
+        }
+    
+        #toc_container .toc_container__wrapper,
+        #toc_container .intro,
+        #toc_container ,
+        #content .content__wrapper,
+        .page__list-wrapper,
+        .content__wrapper,
+        ::-webkit-scrollbar-track {
+            border-color: $white !important;
+        }
+    
+        input[type="range"] {
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(0.3, $nlb-green), color-stop(0.3, lighten($nlb-black, 25%)));
+        }
+    
+        input[type='range']::-webkit-slider-thumb {
+            background-color: $white !important;
+            border: .2vh solid $white !important;
+        }
+    
+        input[type='range']::-moz-range-thumb {
+            background-color: $white !important;
+            border: .2vh solid $white !important;
+            height: 1.2vh;
+            width: 1.2vh;
+            border-radius: 50%;
+        }
+    
+        .header__right-2 {
+            color: $white !important;
+        }
+    
+        #skippability span,
+        #Avspillingshastighet_main span,
+        header .header__right-2 span {
+            color: lighten($nlb-black, 5%);
+        }
+        .progress-container{
+            background-color: $white !important;
+            border: 1px solid $white !important;
+        }
+        .progress-bar{
+            background-color: $nlb-black !important;
+                
+        }
+        #play_button 
+        { 
+            background-color: $white !important;
+        }
+    }
+    
+    #content {
+        blockquote {
+            background-color: $dark !important;
+            color: $light !important;
+            border-color: $light !important;
+        }
+
+        background-color: $dark !important;
+        color: $light !important;
+        border-color: $light !important;
+    
+        a:hover,
+        .rbPausedFragment,
+        .rbActiveFragment {
+            background: $pure-yellow !important;
+            color: $nlb-black !important;
+        }
+    
+        span.sentence {
+            color: $light !important;
+        }
+    
+        /* Frames
+            * ---------------------------------------------------------- */
+        .generisk-ramme {
+            @include nlb-dark-frame();
+        }
+    
+        .ramme {
+            @include nlb-dark-frame();
+    
+            &.bg-red {
+                @include nlb-color($frame-night-red-bg, lighten($frame-night-red-bg, 35%), $white);
+            }
+            
+            &.bg-blue {
+                @include nlb-color($frame-night-blue-bg, lighten($frame-night-blue-bg, 35%), $white);
+            }
+            
+            &.bg-yellow {
+                @include nlb-color($frame-night-yellow-bg, lighten($frame-night-yellow-bg, 35%), $white);
+            }
+        }
+    
+        /* Tables
+            * ---------------------------------------------------------- */
+        table {
+            color: $light !important;
+            background-color: inherit !important;
+    
+            ul {
+                padding-inline-start: 0;
+    
+                li {
+                    margin-left: 0;
+                }
+            }
+    
+            th {
+                background-color: $dark !important;
+            }
+        }
+    }
+}
+
+body.theme__dark {
+    @extend .bg-night, .text-light;
+
     #toc_container .toc_container__wrapper,
     #content .content__wrapper,
     .page__list-wrapper {
@@ -14,7 +163,6 @@
     #book_header {
         background-color: lighten($nlb-black, 5%);
         border-color: $white;
-
     }
     #toc_container,
     #page-list {
@@ -81,11 +229,17 @@
     { 
         background-color: $white;
     }
- }
+}
 
 #content.theme__dark {
     @extend .bg-night, .text-light;
     border-color: $white;
+    
+    blockquote {
+        background-color: $dark !important;
+        color: $light !important;
+        border-color: $light !important;
+    }
 
     a:hover,
     .rbPausedFragment,
@@ -99,14 +253,14 @@
     }
 
     /* Frames
-     * ---------------------------------------------------------- */
+        * ---------------------------------------------------------- */
     .generisk-ramme {
         @include nlb-dark-frame();
     }
 
     .ramme {
         @include nlb-dark-frame();
-    
+
         &.bg-red {
             @include nlb-color($frame-night-red-bg, lighten($frame-night-red-bg, 35%), $white);
         }
@@ -119,9 +273,9 @@
             @include nlb-color($frame-night-yellow-bg, lighten($frame-night-yellow-bg, 35%), $white);
         }
     }
-    
+
     /* Tables
-     * ---------------------------------------------------------- */
+        * ---------------------------------------------------------- */
     table {
         @extend .table-responsive, .text-light;
         background-color: inherit !important;
@@ -133,7 +287,7 @@
                 margin-left: 0;
             }
         }
-    
+
         thead {
             @extend .thead-dark;
         }
